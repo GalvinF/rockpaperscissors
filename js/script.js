@@ -38,19 +38,20 @@ $(".play").click(function () {
       (userChoice === "paper" && computerChoice === "scissors") ||
       (userChoice === "scissors" && computerChoice === "rock")
     ) {
-      winner = "Computer Wins!";
+       return winner = "Computer Wins!";
     } else if (
       (userChoice === "rock" && computerChoice === "scissors") ||
       (userChoice === "paper" && computerChoice === "rock") ||
       (userChoice === "scissors" && computerChoice === "paper")
     ) {
-      winner = "User Wins!";
+      return winner = "User Wins!";
     } else if (
       (userChoice === "rock" && computerChoice === "rock") ||
       (userChoice === "paper" && computerChoice === "paper") ||
       (userChoice === "scissors" && computerChoice === "scissors")
     ) {
-      winner = "Tie Game!";
-    } else winner = "Error, Try Again";
+      return winner = "Tie Game!";
+    } else 
+      return winner = "Error, Try Again!";
   }
 });
